@@ -1,0 +1,58 @@
+runs ->  runs.scored , lambda2 ,NA
+runs ->  runs.batted.in , lambda3 ,NA
+runs ->  Clutch , lambda4 ,NA
+runs ->  on.base.perc , lambda5 ,NA
+ball ->  ball.fastball.ratio , lambda6 ,NA
+ball ->  ball.sliders.ratio , lambda7 ,NA
+ball ->  ball.cutters.ratio , lambda8 ,NA
+ball ->  ball.curves.ratio , lambda9 ,NA
+ball ->  ball.changeups.ratio , lambda10 ,NA
+ball ->  ball.splitters.ratio , lambda11 ,NA
+hitting ->  hits , lambda12 ,NA
+hitting ->  runs.batted.in , lambda14 ,NA
+hitting ->  batting.average , lambda15 ,NA
+hitting ->  hit.batted.ball , lambda16 ,NA
+hitting ->  bat.exit.velocity , lambda17 ,NA
+hitting ->  Swing.perc , lambda18 ,NA
+hitting ->  total.contact.perc , lambda19 ,NA
+hitting ->  swing.strike.perc , lambda20 ,NA
+non.batting ->  plate.appearances , lambda21 ,NA
+non.batting ->  stolen.base , lambda23 ,NA
+non.batting ->  running.speed.score , lambda24 ,NA
+non.batting ->  Clutch , lambda25 ,NA
+non.batting ->  Wins.above.replacement , lambda26 ,NA
+non.batting ->  Wins.above.replacement , lambda27 ,NA
+non.batting ->  Games.played , lambda28 ,NA
+non.batting ->  plate.appearances , lambda29 ,NA
+Games.played<->  Games.played , psi1 ,NA
+plate.appearances<->  plate.appearances , psi2 ,NA
+hits<->  hits , psi3 ,NA
+runs.scored<->  runs.scored , psi5 ,NA
+runs.batted.in<->  runs.batted.in , psi6 ,NA
+stolen.base<->  stolen.base , psi7 ,NA
+batting.average<->  batting.average , psi8 ,NA
+on.base.perc<->  on.base.perc , psi9 ,NA
+running.speed.score<->  running.speed.score , psi10 ,NA
+hit.batted.ball<->  hit.batted.ball , psi11 ,NA
+bat.exit.velocity<->  bat.exit.velocity , psi12 ,NA
+Clutch<->  Clutch , psi13 ,NA
+Swing.perc<->  Swing.perc , psi14 ,NA
+total.contact.perc<->  total.contact.perc , psi15 ,NA
+swing.strike.perc<->  swing.strike.perc , psi16 ,NA
+ball.fastball.ratio<->  ball.fastball.ratio , psi17 ,NA
+ball.sliders.ratio<->  ball.sliders.ratio , psi18 ,NA
+ball.cutters.ratio<->  ball.cutters.ratio , psi19 ,NA
+ball.curves.ratio<->  ball.curves.ratio , psi20 ,NA
+ball.changeups.ratio<->  ball.changeups.ratio , psi21 ,NA
+ball.splitters.ratio<->  ball.splitters.ratio , psi22 ,NA
+Wins.above.replacement<->  Wins.above.replacement , psi23 ,NA
+runs <->  runs , NA ,1
+runs <->  ball , phi2 ,NA
+runs <->  hitting , phi3 ,NA
+runs <->  non.batting , phi4 ,NA
+ball <->  ball , NA ,1
+ball <->  hitting , phi7 ,NA
+ball <->  non.batting , phi8 ,NA
+hitting <->  hitting , NA ,1
+hitting <->  non.batting , phi12 ,NA
+non.batting <->  non.batting , NA ,1
